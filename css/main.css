@@ -1,0 +1,81 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+	/*设置全屏*/
+	height: 100%;
+	/*去掉滚动条*/
+	overflow: hidden;
+	font-family: Arial, 'Helvetica Neue', Helvetica, 'Hiragino Sans GB', 'Microsoft Yahei', sans-serif;
+
+}
+
+#container, .sections, .section {
+	/*设置全屏*/
+	height: 100%;
+}
+
+.section {
+	color: #fff;
+	text-align: center;
+}
+
+#section0 {
+	background-color: #435A6B;
+}
+
+#section1 {
+	background-color: #3FA46A;
+}
+
+#section2 {
+	background-color: #CD4436;
+}
+
+#section3 {
+	background-color: #0E83CD;
+}
+
+.pages{
+	position:fixed;
+	right: 10px;
+	top: 50%;
+	list-style: none;
+}
+.pages li{
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: #fff;
+	margin: 0 0 10px 5px;
+	position: relative;
+	cursor: pointer;
+}
+.pages li.active{
+	width: 14px;
+	height: 14px;
+	border: 2px solid #fff;
+	background: none;
+	margin-left: 0;
+}
+
+.pages li .hover-text {
+  position: absolute;
+  top: -6px;
+  right: 12px;
+  padding-right: 0.6em;
+  width: 4.6em;
+  opacity: 0;
+  color: #fff;
+  text-align: right;
+  -webkit-transition: opacity 0.3s;
+  -moz-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+  line-height: 18px;
+}
+
+li:hover .hover-text {
+	opacity: 1;
+}
