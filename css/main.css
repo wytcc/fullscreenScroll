@@ -114,12 +114,16 @@ html, body {
 }
 
 #section2 .row {
-	padding: 70px;
+	padding: 60px;
 	overflow: hidden;
 }
 
 .nav-section {
-	padding: 6em 2em;
+	padding: 2em 2em;
+}
+
+.nav-section img {
+	height: 100%;
 }
 
 nav {
